@@ -99,7 +99,7 @@ if(email.length>15){
   returnval=false;
 }
 var phone = document.forms['Myform']["Pnum"].value;
-if(phone.length>10){
+if(phone.length>10 || phone.length<10){
   setError("Phone", "Length of phone number cannot be more than 10");
   returnval=false;
 }
